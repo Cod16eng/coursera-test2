@@ -12,12 +12,13 @@ angular.module('LunchCheck', [])
            var message;
            if (x=="") {
                 message = "Please enter data first";
-           } else if (x <= 3) {
+           } else if (x <3) {
                message = "Enjoy";
            } else  {
                message = "Too much";
            }
-console.log();
+
+console.log(x);
     $scope.message = message;
      };
    }
