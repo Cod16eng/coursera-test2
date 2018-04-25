@@ -8,16 +8,16 @@ angular.module('LunchCheck', [])
  function LunchCheckController($scope) {
      $scope.name = "";
      $scope.CheckIfToMuch = function () {
-           var x = $scope.name.split(',') ;
+           var x = $scope.name.split(",");
            var message;
-           if (x==""){
+           if (x=="") {
                 message = "Please enter data first";
-           } else if (x < 3) {
+           } else if (x <= 3) {
                message = "Enjoy";
            } else  {
                message = "Too much";
            }
-
+console.log();
     $scope.message = message;
      };
    }
