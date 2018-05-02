@@ -10,6 +10,11 @@ angular.module('LunchCheck', [])
      $scope.CheckIfToMuch = function () {
            var x = $scope.name.split(",");
            var message;
+
+           for (var i = 0; i < x.lenght; i++){
+
+           }
+
            if (x=="") {
                 message = "Please enter data first";
            } else if (x <3) {
